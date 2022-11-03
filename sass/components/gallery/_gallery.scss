@@ -1,0 +1,32 @@
+.gallery {
+}
+
+.gallery__top-text {
+  display: flex;
+  align-items: baseline;
+  gap: 20px;
+  margin-bottom: 70px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #303030;
+
+  &::before {
+    content: "";
+
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
+  }
+}
+
+.gallery__thumb {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}

@@ -1,0 +1,13 @@
+@import "./utils/variables";
+@import "./utils/container";
+@import "./base/normalize";
+@import "./base/reset-styles";
+@import "./base/commons";
+
+@import "./components/header/header";
+@import "./components/hero/hero";
+@import "./components/about/about";
+@import "./components/prices/prices";
+@import "./components/benefits/benefits";
+@import "./components/barbers/barbers";
+@import "./components/gallery/gallery";
