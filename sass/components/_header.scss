@@ -1,6 +1,6 @@
-.logo {
-  // display: flex;
-}
+// .logo {
+//   // display: flex;
+// }
 
 .icon-logo {
   fill: #ffffff;
@@ -71,16 +71,17 @@
   color: #303030;
 }
 
-.site-nav__link {
-}
+// .site-nav__link {
+// }
 
-.contacts {
+.contacts-nav {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-bottom: 64px;
 }
 
-.contacts__link {
+.contacts-nav__link {
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
@@ -115,4 +116,39 @@
     background-color: #ff6c00;
     color: #ffffff;
   }
+}
+
+// -----------soc---------------------
+.soc {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.soc__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+  margin-left: 40px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 60px;
+    height: 1px;
+    background-color: #303030;
+  }
+}
+
+.soc__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  /* identical to box height */
+
+  letter-spacing: 0.2em;
+
+  color: #303030;
 }

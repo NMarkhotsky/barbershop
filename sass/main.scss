@@ -4,10 +4,13 @@
 @import "./base/reset-styles";
 @import "./base/commons";
 
-@import "./components/header/header";
-@import "./components/hero/hero";
-@import "./components/about/about";
-@import "./components/prices/prices";
-@import "./components/benefits/benefits";
-@import "./components/barbers/barbers";
-@import "./components/gallery/gallery";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/prices";
+@import "./components/benefits";
+@import "./components/barbers";
+@import "./components/gallery";
+@import "./components/online";
+@import "./components/contacts";
+@import "./components/footer";

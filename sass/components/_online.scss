@@ -1,0 +1,100 @@
+.online {
+  background-color: #191c26;
+}
+
+.online__title {
+  margin-bottom: 44px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.online-form {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.online-form__input-wrap {
+  position: relative;
+
+  margin-bottom: 44px;
+}
+
+.online-form__input {
+  width: 100%;
+  height: 24px;
+
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  border-radius: 0%;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: #ffffff;
+
+  &:focus {
+    color: #ffffff;
+  }
+}
+
+.online-form__label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: transform 250ms linear;
+
+  .online-item:focus + &,
+  .online-item:not(:placeholder-shown) + & {
+    transform: translateY(-100%);
+    color: #ffffff;
+  }
+}
+
+.online-item:focus {
+  border-color: #ffffff;
+}
+
+.online-form__textarea-wrap {
+  position: relative;
+
+  margin-bottom: 44px;
+}
+
+.online-form__textarea {
+  width: 100%;
+  height: 76px;
+
+  background-color: transparent;
+  outline: transparent;
+  border: none;
+  border-radius: 0%;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  color: #ffffff;
+
+  &:focus {
+    color: #ffffff;
+  }
+}
+
+.online-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ffffff;
+}

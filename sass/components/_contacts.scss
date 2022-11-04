@@ -1,0 +1,93 @@
+.contacts {
+  background-image: url(../images/contacts2.png);
+  background-color: #191c26;
+
+  margin-top: -1px;
+}
+
+.contacts__title {
+  margin-bottom: 44px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 49px;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+// address-------------------------------
+.address {
+  margin-bottom: 44px;
+}
+
+.address__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.address__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
+
+.address__item--bold {
+  font-weight: 700;
+}
+
+.address__link {
+  display: flex;
+  align-items: center;
+}
+
+.address__icon {
+  margin-right: 16px;
+}
+
+// ----------contact-box---------------
+
+.contacts-box__bottom-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  &::before {
+    content: "";
+
+    width: 60px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.4);
+  }
+}
+
+.contacts-box__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+}
