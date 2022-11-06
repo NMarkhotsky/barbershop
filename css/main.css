@@ -7,7 +7,7 @@
 }
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -325,9 +325,19 @@ body {
   padding: 0;
   margin-left: auto;
 }
+@media screen and (min-width: 767px) {
+  .btn-open {
+    display: none;
+  }
+}
 
 .btn-open__menu {
   display: flex;
+}
+@media screen and (min-width: 767px) {
+  .btn-open__menu {
+    display: none;
+  }
 }
 
 .page-header {
@@ -341,24 +351,24 @@ body {
   margin-top: 40px;
 }
 
-.menu-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 70vw;
-  height: 100vh;
-  padding: 48px 31px 48px 40px;
-  background-color: #ffffff;
-  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
-  z-index: 999;
-  transform: translateX(130%);
-  transition: transform 250ms ease-in-out;
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    padding: 48px 31px 48px 40px;
+    background-color: #ffffff;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
+    z-index: 999;
+    transform: translateX(130%);
+    transition: transform 250ms ease-in-out;
+  }
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
 }
-
-.menu-container.is-open {
-  transform: translateX(0);
-}
-
 .site-nav {
   margin-bottom: 64px;
 }
@@ -377,6 +387,11 @@ body {
   letter-spacing: 0.1em;
   color: #303030;
 }
+@media screen and (min-width: 768px) {
+  .site-nav__item {
+    color: #ffffff;
+  }
+}
 
 .contacts-nav {
   display: flex;
@@ -393,6 +408,11 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #303030;
+}
+@media screen and (min-width: 768px) {
+  .contacts-nav__link {
+    color: #ffffff;
+  }
 }
 
 .button {
@@ -413,6 +433,11 @@ body {
 .button:hover, .button:focus {
   background-color: #ff6c00;
   color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .button {
+    color: #ffffff;
+  }
 }
 
 .soc {
@@ -437,6 +462,11 @@ body {
   height: 1px;
   background-color: #303030;
 }
+@media screen and (min-width: 768px) {
+  .soc__list::before {
+    display: none;
+  }
+}
 
 .soc__link {
   font-weight: 600;
@@ -445,6 +475,11 @@ body {
   /* identical to box height */
   letter-spacing: 0.2em;
   color: #303030;
+}
+@media screen and (min-width: 768px) {
+  .soc__link {
+    color: #ffffff;
+  }
 }
 
 .hero {

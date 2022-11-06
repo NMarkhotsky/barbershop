@@ -12,16 +12,28 @@
   border: none;
   padding: 0;
   margin-left: auto;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 
 .btn-open__menu {
   display: flex;
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
 }
 
-// ----------------------------------------------------
+// ----------------------------------------------------------
+
 .page-header {
   position: absolute;
   width: 100%;
+}
+
+.box {
 }
 
 .page-header__container {
@@ -30,24 +42,26 @@
   margin-top: 40px;
 }
 
-.menu-container {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 70vw;
-  height: 100vh;
+@media screen and (max-width: 767px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
 
-  padding: 48px 31px 48px 40px;
-  background-color: #ffffff;
-  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08),
-    -1px 0px 3px rgba(0, 0, 0, 0.16);
-  z-index: 999;
+    padding: 48px 31px 48px 40px;
+    background-color: #ffffff;
+    box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04),
+      -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
+    z-index: 999;
 
-  transform: translateX(130%);
-  transition: transform 250ms ease-in-out;
-}
-.menu-container.is-open {
-  transform: translateX(0);
+    transform: translateX(130%);
+    transition: transform 250ms ease-in-out;
+  }
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
 }
 
 .site-nav {
@@ -69,6 +83,10 @@
   letter-spacing: 0.1em;
 
   color: #303030;
+
+  @media screen and (min-width: 768px) {
+    color: #ffffff;
+  }
 }
 
 // .site-nav__link {
@@ -91,6 +109,10 @@
   text-transform: uppercase;
 
   color: #303030;
+
+  @media screen and (min-width: 768px) {
+    color: #ffffff;
+  }
 }
 
 .button {
@@ -116,6 +138,10 @@
     background-color: #ff6c00;
     color: #ffffff;
   }
+
+  @media screen and (min-width: 768px) {
+    color: #ffffff;
+  }
 }
 
 // -----------soc---------------------
@@ -139,6 +165,10 @@
     width: 60px;
     height: 1px;
     background-color: #303030;
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -151,4 +181,8 @@
   letter-spacing: 0.2em;
 
   color: #303030;
+
+  @media screen and (min-width: 768px) {
+    color: #ffffff;
+  }
 }
