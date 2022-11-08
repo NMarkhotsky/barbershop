@@ -1,5 +1,20 @@
 .barbers {
   background-color: #f7f7f7;
+  // width: 100%;
+}
+
+// .barbers__container {
+//   // @media screen and (min-width: 768px) {
+//   //   width: 100%;
+//   // }
+// }
+
+.barbers__box {
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .barbers__top-text {
@@ -45,8 +60,13 @@
   gap: 64px;
 }
 
-// .barber__item {
-// }
+.barber__item {
+  @media screen and (min-width: 768px) {
+    & > img {
+      width: 450px;
+    }
+  }
+}
 
 .barbers__thumb {
   padding-top: 30px;

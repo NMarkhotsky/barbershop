@@ -1,9 +1,17 @@
-// .logo {
-//   // display: flex;
-// }
+.logo {
+  display: inline-flex;
+}
+
+.logo--mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 
 .icon-logo {
-  fill: #ffffff;
+  @media screen and (max-width: 767px) {
+    fill: #ffffff;
+  }
 }
 
 .btn-open {
@@ -34,12 +42,21 @@
 }
 
 .box {
+  display: flex;
 }
 
 .page-header__container {
   display: flex;
   align-items: center;
   margin-top: 40px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -64,14 +81,35 @@
   }
 }
 
+.menu-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 .site-nav {
   margin-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .site-nav__list {
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin-left: 60px;
+  }
 }
 
 .site-nav__item {
@@ -85,6 +123,8 @@
   color: #303030;
 
   @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 16px;
     color: #ffffff;
   }
 }
@@ -97,6 +137,13 @@
   flex-direction: column;
   gap: 24px;
   margin-bottom: 64px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts-nav__link {
@@ -111,12 +158,14 @@
   color: #303030;
 
   @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 16px;
     color: #ffffff;
   }
 }
 
 .button {
-  width: 194px;
+  width: 160px;
   padding-top: 12px;
   padding-bottom: 12px;
 
@@ -145,11 +194,16 @@
 }
 
 // -----------soc---------------------
+
 .soc {
   position: relative;
   display: flex;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
+
 .soc__list {
   display: flex;
   flex-direction: column;
@@ -165,10 +219,6 @@
     width: 60px;
     height: 1px;
     background-color: #303030;
-
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
   }
 }
 
@@ -181,8 +231,4 @@
   letter-spacing: 0.2em;
 
   color: #303030;
-
-  @media screen and (min-width: 768px) {
-    color: #ffffff;
-  }
 }

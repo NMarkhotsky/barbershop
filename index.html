@@ -17,7 +17,7 @@
     <header class="page-header">
       <div class="container box">
         <div class="page-header__container">
-          <a href="" class="logo">
+          <a href="" class="logo logo--mobile">
             <svg class="icon-logo" width="69" height="55">
               <use href="./images/sprite.svg#icon-Logo"></use>
             </svg>
@@ -43,6 +43,11 @@
           </button>
 
           <nav class="site-nav">
+            <a href="" class="logo">
+              <svg class="icon-logo" width="69" height="55">
+                <use href="./images/sprite.svg#icon-Logo"></use>
+              </svg>
+            </a>
             <ul class="site-nav__list">
               <li class="site-nav__item">
                 <a href="#about" class="site-nav__link">About</a>
@@ -61,7 +66,9 @@
 
           <div class="contacts-nav">
             <a href="" class="contacts-nav__link">+38 044 111 11 11</a>
-            <button type="button" class="button">Online-booking</button>
+            <button type="button" class="button contact-nav__btn">
+              Online-booking
+            </button>
           </div>
 
           <div class="soc">
@@ -79,33 +86,63 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container">
-          <!-- <div class="hero__content">
+        <div class="container hero__container">
+          <div class="socc">
+            <ul class="socc__list">
+              <li class="socc__item">
+                <a
+                  class="socc__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="socc__item">
+                <a
+                  class="socc__link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hero__content">
             <p class="hero__top-text">A hair salon for men in Kyiv</p>
             <h1 class="hero__title">BarberShop</h1>
             <p class="hero__bottom-text">
               We are experts in trendy men’s haircuts. We work quickly,
               carefully and with style.
             </p>
-          </div> -->
+          </div>
         </div>
       </section>
       <section class="about section" id="about">
-        <div class="container">
-          <p class="about__top-text">About</p>
-          <h2 class="about__title">Best Barbershop in your city</h2>
-          <p class="about__bottom-text">
-            If you want to add more confidence to your image, you should visit
-            us
-          </p>
-          <p class="about__text">
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <button type="button" class="button">Online-booking</button>
+        <div class="container about__container">
+          <div class="about__thumb">
+            <img src="./images/about_img1.jpg" alt="" />
+            <img src="./images/about_img2.jpg" alt="" />
+          </div>
+          <div class="about__box">
+            <p class="about__top-text">About</p>
+            <h2 class="about__title">Best Barbershop in your city</h2>
+            <p class="about__bottom-text">
+              If you want to add more confidence to your image, you should visit
+              us
+            </p>
+            <p class="about__text">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button type="button" class="button about__btn">
+              Online-booking
+            </button>
+          </div>
         </div>
       </section>
       <section class="prices section" id="prices">
@@ -157,13 +194,14 @@
       </section>
       <section class="benefits section">
         <div class="container benefits-container">
-          <div class="benefits__content"></div>
-          <p class="benefits__top-text">Old traditional school</p>
-          <h2 class="benefits__title">¿Why people come to us?</h2>
-          <p class="benefits__bottom-text">
-            Only good things are said about us. But it's better to see and feel
-            1 time than read 10 times.
-          </p>
+          <div class="benefits__content">
+            <p class="benefits__top-text">Old traditional school</p>
+            <h2 class="benefits__title">¿Why people come to us?</h2>
+            <p class="benefits__bottom-text">
+              Only good things are said about us. But it's better to see and
+              feel 1 time than read 10 times.
+            </p>
+          </div>
           <ul class="benefits__list">
             <li class="benefits__item">
               <span class="benefits__span"
@@ -193,136 +231,162 @@
         </div>
       </section>
       <section class="barbers section" id="barbers">
-        <div class="container">
-          <p class="barbers__top-text">For true enjoyers of the atmosphere</p>
-          <h2 class="barbers__title">Our barbers</h2>
-          <ul class="barber__list">
-            <li class="barber__item">
-              <img src="./images/barbers1.jpg" alt="hair" />
-              <div class="barbers__thumb">
-                <p class="barbers__name">John Smith</p>
-                <p class="barbers__text">Extreme Barber</p>
-              </div>
-              <ul class="social">
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-instagram"></use></svg
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-twitter"></use></svg
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-facebook"></use></svg
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-linkedin"></use></svg
-                  ></a>
-                </li>
-              </ul>
-            </li>
-            <li class="barber__item">
-              <img src="./images/barbers2.jpg" alt="hair" />
-              <div class="barbers__thumb">
-                <p class="barbers__name">Michele Doe</p>
-                <p class="barbers__text">Extreme Barber</p>
-              </div>
-              <ul class="social">
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-instagram"></use></svg
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-twitter"></use></svg
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-facebook"></use></svg
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-linkedin"></use></svg
-                  ></a>
-                </li>
-              </ul>
-            </li>
-            <li class="barber__item">
-              <img src="./images/barbers3.jpg" alt="hair" />
-              <div class="barbers__thumb">
-                <p class="barbers__name">Alan Black</p>
-                <p class="barbers__text">Extreme Barber</p>
-              </div>
-              <ul class="social">
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-instagram"></use></svg
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-twitter"></use></svg
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-facebook"></use></svg
-                  ></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link"
-                    ><svg width="20" height="20" class="social__icon">
-                      <use href="./images/sprite.svg#icon-linkedin"></use></svg
-                  ></a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+        <div class="container barbers__container">
+          <div class="barbers__box">
+            <div>
+              <p class="barbers__top-text">
+                For true enjoyers of the atmosphere
+              </p>
+              <h2 class="barbers__title">Our barbers</h2>
+            </div>
+            <ul class="barber__list">
+              <li class="barber__item">
+                <img src="./images/barbers1.jpg" alt="hair" />
+                <div class="barbers__thumb">
+                  <p class="barbers__name">John Smith</p>
+                  <p class="barbers__text">Extreme Barber</p>
+                </div>
+                <ul class="social">
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use
+                          href="./images/sprite.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use
+                          href="./images/sprite.svg#icon-facebook"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use
+                          href="./images/sprite.svg#icon-linkedin"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="barber__item">
+                <img src="./images/barbers2.jpg" alt="hair" />
+                <div class="barbers__thumb">
+                  <p class="barbers__name">Michele Doe</p>
+                  <p class="barbers__text">Extreme Barber</p>
+                </div>
+                <ul class="social">
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use
+                          href="./images/sprite.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use
+                          href="./images/sprite.svg#icon-facebook"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use
+                          href="./images/sprite.svg#icon-linkedin"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+              <li class="barber__item">
+                <img src="./images/barbers3.jpg" alt="hair" />
+                <div class="barbers__thumb">
+                  <p class="barbers__name">Alan Black</p>
+                  <p class="barbers__text">Extreme Barber</p>
+                </div>
+                <ul class="social">
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use
+                          href="./images/sprite.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use href="./images/sprite.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use
+                          href="./images/sprite.svg#icon-facebook"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link"
+                      ><svg width="20" height="20" class="social__icon">
+                        <use
+                          href="./images/sprite.svg#icon-linkedin"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="gallery section">
         <div class="container">
-          <h2 class="gallery__top-text">In Latin, "barba" means "beard"</h2>
-          <div class="gallery__thumb">
-            <img
-              class="gallery__img"
-              src="./images/Rectangle1.jpg"
-              alt="hair"
-            />
-            <img
-              class="gallery__img"
-              src="./images/Rectangle2.jpg"
-              alt="hair"
-            />
-            <img
-              class="gallery__img"
-              src="./images/Rectangle3.jpg"
-              alt="hair"
-            />
-            <img
-              class="gallery__img"
-              src="./images/Rectangle4.jpg"
-              alt="hair"
-            />
+          <div class="gallery__container">
+            <h2 class="gallery__top-text">In Latin, "barba" means "beard"</h2>
+            <div class="gallery__thumb">
+              <img
+                class="gallery__img"
+                src="./images/Rectangle1.jpg"
+                alt="hair"
+              />
+              <img
+                class="gallery__img"
+                src="./images/Rectangle2.jpg"
+                alt="hair"
+              />
+              <img
+                class="gallery__img"
+                src="./images/Rectangle3.jpg"
+                alt="hair"
+              />
+              <img
+                class="gallery__img"
+                src="./images/Rectangle4.jpg"
+                alt="hair"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -367,43 +431,45 @@
         <section class="contacts section" id="contacts">
           <div class="container">
             <h2 class="contacts__title">Contacts</h2>
-            <address class="address">
-              <ul class="address__list">
-                <li class="address__item address__item--bold">
-                  <a href="" class="address__link">
-                    <svg width="24" height="24" class="address__icon">
-                      <use href="./images/sprite.svg#icon-map-pin"></use>
-                    </svg>
-                    st. Vasilkovaya, 7A Kiev, 08132
-                  </a>
-                </li>
-                <li class="address__item">
-                  <a href="" class="address__link">
-                    <svg width="24" height="24" class="address__icon">
-                      <use href="./images/sprite.svg#icon-phone"></use>
-                    </svg>
-                    +38 044 111 11 11
-                  </a>
-                </li>
-                <li class="address__item">
-                  <a href="" class="address__link">
-                    <svg width="24" height="24" class="address__icon">
-                      <use href="./images/sprite.svg#icon-mail"></use>
-                    </svg>
-                    barbershop@email.com
-                  </a>
-                </li>
-              </ul>
-            </address>
-            <div class="contacts-box">
-              <p class="contacts-box__bottom-text">Working hours</p>
-              <p class="contacts-box__text">Every day from 9:00 to 22:00</p>
+            <div class="address-box">
+              <address class="address">
+                <ul class="address__list">
+                  <li class="address__item address__item--bold">
+                    <a href="" class="address__link">
+                      <svg width="24" height="24" class="address__icon">
+                        <use href="./images/sprite.svg#icon-map-pin"></use>
+                      </svg>
+                      st. Vasilkovaya, 7A Kiev, 08132
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a href="" class="address__link">
+                      <svg width="24" height="24" class="address__icon">
+                        <use href="./images/sprite.svg#icon-phone"></use>
+                      </svg>
+                      +38 044 111 11 11
+                    </a>
+                  </li>
+                  <li class="address__item">
+                    <a href="" class="address__link">
+                      <svg width="24" height="24" class="address__icon">
+                        <use href="./images/sprite.svg#icon-mail"></use>
+                      </svg>
+                      barbershop@email.com
+                    </a>
+                  </li>
+                </ul>
+              </address>
+              <div class="contacts-box">
+                <p class="contacts-box__bottom-text">Working hours</p>
+                <p class="contacts-box__text">Every day from 9:00 to 22:00</p>
+              </div>
             </div>
           </div>
         </section>
       </div>
       <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
           <ul class="footer__list">
             <li class="footer__item">
               <a href="#" class="footer__link">Instagram</a>

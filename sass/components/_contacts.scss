@@ -17,11 +17,27 @@
   letter-spacing: 0.05em;
 
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 // address-------------------------------
+.address-box {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .address {
   margin-bottom: 44px;
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
 }
 
 .address__list {
@@ -29,6 +45,11 @@
   flex-wrap: wrap;
   align-items: center;
   gap: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 .address__item {
