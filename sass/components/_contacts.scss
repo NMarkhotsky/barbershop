@@ -22,12 +22,6 @@
   }
 }
 
-.contacts-container {
-  @media screen and (min-width: 1200px) {
-    max-width: 600px;
-  }
-}
-
 .contacts__title {
   @extend %section-title;
 

@@ -1316,12 +1316,6 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .contacts-container {
-    max-width: 600px;
-  }
-}
-
 .contacts__title {
   margin-bottom: 44px;
   text-align: center;
