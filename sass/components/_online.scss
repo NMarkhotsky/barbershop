@@ -1,27 +1,33 @@
+.online-contacts-wrap {
+  // display: flex;
+}
+
+.online-container {
+  // max-width: 600px;
+}
+
 .online {
   background-color: #191c26;
 }
 
 .online__title {
+  @extend %section-title;
+
   margin-bottom: 44px;
 
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 49px;
   text-align: center;
-  letter-spacing: 0.05em;
 
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .online-form {
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
-  /* identical to box height */
-
+  line-height: calc(15px / 11px);
   letter-spacing: 0.1em;
   text-transform: uppercase;
 

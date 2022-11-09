@@ -11,17 +11,12 @@
 // }
 
 .prices__top-text {
+  @extend %top-text;
+
   display: flex;
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
-
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  /* identical to box height */
-
-  text-transform: uppercase;
 
   color: rgba(157, 164, 189, 0.6);
 
@@ -35,18 +30,19 @@
 }
 
 .prices__title {
+  @extend %section-title;
+
   margin-bottom: 44px;
 
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
   font-size: 40px;
-  line-height: 47px;
-  /* identical to box height */
-
-  letter-spacing: 0.05em;
+  line-height: calc(47px / 40px);
 
   color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    font-size: 42px;
+    line-height: calc(49px / 42px);
+  }
 }
 
 .prices-thumb {
@@ -62,9 +58,7 @@
 .prices__list {
   font-weight: 400;
   font-size: 14px;
-  line-height: 20px;
-  /* identical to box height, or 143% */
-
+  line-height: calc(20px / 14px);
   letter-spacing: 0.02em;
 
   color: #9da4bd;

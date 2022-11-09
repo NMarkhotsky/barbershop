@@ -1,8 +1,13 @@
 // .benefits {
 // }
 
-// .benefits-container {
-// }
+.benefits-container {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 130px;
+    flex-direction: row-reverse;
+  }
+}
 
 .benefits__content {
   @media screen and (min-width: 768px) {
@@ -11,17 +16,12 @@
 }
 
 .benefits__top-text {
+  @extend %top-text;
+
   display: flex;
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
-
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 15px;
-  /* identical to box height */
-
-  text-transform: uppercase;
 
   color: #303030;
 
@@ -35,19 +35,18 @@
 }
 
 .benefits__title {
+  @extend %section-title;
+
   margin-bottom: 20px;
 
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
   font-size: 41px;
-  line-height: 49px;
-  letter-spacing: 0.05em;
 
   color: #303030;
 
   @media screen and (min-width: 768px) {
     max-width: 449px;
+
+    font-size: 42px;
   }
 }
 
@@ -57,9 +56,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
-  /* or 167% */
-
+  line-height: calc(30px / 18px);
   letter-spacing: 0.02em;
 
   color: #555555;
@@ -128,9 +125,7 @@
 .benefits__span--plus {
   font-weight: 600;
   font-size: 16px;
-  line-height: 22px;
-  /* identical to box height */
-
+  line-height: calc(22px / 16px);
   text-align: center;
 
   color: #ff6c00;
@@ -139,7 +134,7 @@
 .benefits__text {
   font-weight: 600;
   font-size: 11px;
-  line-height: 15px;
+  line-height: calc(15px / 11px);
   text-align: center;
 
   color: #303030;
