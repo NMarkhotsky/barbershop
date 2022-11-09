@@ -1,12 +1,20 @@
 .online-contacts-wrap {
-  // display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
 .online-container {
-  // max-width: 600px;
+  @media screen and (min-width: 1200px) {
+    max-width: 600px;
+  }
 }
 
 .online {
+  width: 100%;
+
   background-color: #191c26;
 }
 
@@ -34,10 +42,21 @@
   color: rgba(157, 164, 189, 0.4);
 }
 
+.form-box {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
+}
+
 .online-form__input-wrap {
   position: relative;
 
   margin-bottom: 44px;
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .online-form__input {
