@@ -38,4 +38,13 @@
       width: 330px;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    & > img {
+      width: 270px;
+      height: auto;
+    }
+  }
 }
