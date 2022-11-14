@@ -6,8 +6,9 @@
   gap: 30px;
 }
 
-.about__thumb {
+.about__list {
   display: none;
+
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -16,18 +17,6 @@
 
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-  }
-}
-
-.about__img-m {
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-}
-
-.about__img-d {
-  @media screen and (max-width: 1199px) {
-    display: none;
   }
 }
 

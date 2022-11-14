@@ -59,13 +59,13 @@
   }
 }
 
-.barber__item {
-  @media screen and (min-width: 768px) {
-    & > img {
-      width: 450px;
-    }
-  }
-}
+// .barber__item {
+//   // @media screen and (min-width: 768px) {
+//   //   & > img {
+//   //     width: 450px;
+//   //   }
+//   // }
+// }
 
 .barbers__thumb {
   padding-top: 30px;
@@ -123,6 +123,6 @@
   }
 }
 
-// .social__icon:hover {
-//   fill: #ff6c00;
-// }
+.social__icon {
+  transition: fill 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
