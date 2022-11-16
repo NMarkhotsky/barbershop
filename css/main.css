@@ -1194,10 +1194,14 @@ body {
   flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (min-width: 768px) {
+  .gallery__list {
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .gallery__list {
     flex-wrap: nowrap;
-    justify-content: center;
   }
 }
 
@@ -1212,6 +1216,7 @@ body {
 @media screen and (min-width: 1200px) {
   .online-container {
     max-width: 600px;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -1349,6 +1354,14 @@ body {
   .contacts {
     background-image: url(../images/contactsd.png);
     margin-left: -1px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-container {
+    max-width: 600px;
+    padding: 0 0 0 100px;
+    margin: 0;
   }
 }
 
