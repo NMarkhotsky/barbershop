@@ -1,28 +1,15 @@
-(() => {
-  const mobileMenu = document.querySelector(".js-menu-container");
-  const openMenuBtn = document.querySelector(".js-open-menu");
-  const closeMenuBtn = document.querySelector(".js-close-menu");
+const refs = {
+  mobileMenu: document.querySelector('.js-menu-container'),
+  openMenuBtn: document.querySelector('.js-open-menu'),
+  closeMenuBtn: document.querySelector('.js-close-menu'),
+};
 
-  const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute("aria-expanded") === "true" || false;
-    openMenuBtn.setAttribute("aria-expanded", !isMenuOpen);
-    mobileMenu.classList.toggle("is-open");
+refs.openMenuBtn.addEventListener('click', onMenuToggle);
+refs.closeMenuBtn.addEventListener('click', onMenuToggle);
 
-    const scrollLockMethod = !isMenuOpen
-      ? "disableBodyScroll"
-      : "enableBodyScroll";
-    bodyScrollLock[scrollLockMethod](document.body);
-  };
-
-  openMenuBtn.addEventListener("click", toggleMenu);
-  closeMenuBtn.addEventListener("click", toggleMenu);
-
-  // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia("(min-width: 768px)").addEventListener("change", (e) => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove("is-open");
-    openMenuBtn.setAttribute("aria-expanded", false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
-})();
+function onMenuToggle() {
+  refs.mobileMenu.classList.toggle('is-open');
+  document.body.style.overflow === ''
+    ? (document.body.style.overflow = 'hidden')
+    : (document.body.style.overflow = '');
+}
