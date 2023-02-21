@@ -94,7 +94,7 @@
               <li class="socc__item">
                 <a
                   class="socc__link"
-                  href=""
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >Instagram</a
@@ -103,7 +103,7 @@
               <li class="socc__item">
                 <a
                   class="socc__link"
-                  href=""
+                  href="#"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
                   >Youtube</a
@@ -177,9 +177,11 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="button about__btn">
-              Online-booking
-            </button>
+            <a href="#online">
+              <button type="button" class="button about__btn">
+                Online-booking
+              </button></a
+            >
           </div>
         </div>
       </section>
@@ -225,9 +227,11 @@
               </li>
             </ul>
           </div>
-          <button type="button" class="button prices__button">
-            online-booking
-          </button>
+          <a href="#online">
+            <button type="button" class="button prices__button">
+              online-booking
+            </button></a
+          >
         </div>
       </section>
       <section class="benefits section">
@@ -617,7 +621,10 @@
                 ></textarea>
                 <label class="online-form__label" for="message">Message</label>
               </div>
-              <button type="submit" class="button online-button">Send</button>
+
+              <button type="submit" class="button online-button js-form-button">
+                Send
+              </button>
             </form>
           </div>
         </section>
@@ -679,6 +686,7 @@
         </div>
       </footer>
     </main>
-    <script defer src="js/mobile-menu.js"></script>
+    <script src="js/mobile-menu.js" type="module"></script>
+    <script src="./js/ancors.js" type="module"></script>
   </body>
 </html>
