@@ -453,6 +453,27 @@ body {
     transform: translateX(0);
   }
 }
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  z-index: 998;
+  background-color: rgba(0, 0, 0, 0.545);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 @media screen and (min-width: 768px) {
   .menu-container {
     display: flex;
@@ -1283,10 +1304,6 @@ body {
   transition: transform 250ms linear;
 }
 .online-item:not(:-moz-placeholder-shown) + .online-form__label {
-  transform: translateY(-100%);
-  color: #ffffff;
-}
-.online-item:not(:-ms-input-placeholder) + .online-form__label {
   transform: translateY(-100%);
   color: #ffffff;
 }
